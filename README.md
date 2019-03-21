@@ -6,9 +6,10 @@
 
 
 ```bash
-docker run --rm -v images:/data shellus/rt-n56u`
+docker run --rm -v images:/data shellus/rt-n56u
 ```
-~首次run一个镜像，会自动去hub.docker.com下载，后面再run的话，就直接使用本地下载好的镜像了
+*需要mkdir images哦*
+*首次run一个镜像，会自动去hub.docker.com下载，后面再run的话，就直接使用本地下载好的镜像了*
 
 就这样，执行完了，固件就编译到当前路径的images文件夹里面了
 
