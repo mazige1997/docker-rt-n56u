@@ -1,0 +1,5 @@
+#!/bin/bash
+#cd /opt/rt-n56u && git pull
+
+cd /opt/rt-n56u/trunk && ./build_firmware
+cp /opt/rt-n56u/trunk/images/*.trx /data/
