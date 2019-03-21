@@ -6,7 +6,7 @@
 
 
 ```bash
-docker run --rm -v ./images:/data shellus/rt-n56u`
+docker run --rm -v images:/data shellus/rt-n56u`
 ```
 ~首次run一个镜像，会自动去hub.docker.com下载，后面再run的话，就直接使用本地下载好的镜像了
 
@@ -18,9 +18,9 @@ docker run --rm -v ./images:/data shellus/rt-n56u`
 1. 执行
    ```bash
    docker run --rm \
-   -v ./images:/data \
-   -v ./a:/opt/rt-n56u/trunk/configs/boards/a \
-   -v ./a.config:/opt/rt-n56u/trunk/.config \
+   -v images:/data \
+   -v a:/opt/rt-n56u/trunk/configs/boards/a \
+   -v a.config:/opt/rt-n56u/trunk/.config \
    shellus/rt-n56u
    ```
 0. 执行完了，固件就编译到当前路径的images文件夹里面了
